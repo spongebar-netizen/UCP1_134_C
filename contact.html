@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - NihongoClass</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function kirimPesan() {
+      alert('Pesan anda terkirim!');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>NihongoClass</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="about.html">Tentang</a></li>
+        <li><a href="features.html">Fitur</a></li>
+        <li><a href="contact.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Hubungi Kami</h2>
+    <form onsubmit="kirimPesan(); return false;">
+      <label for="nama">Nama:</label><br>
+      <input type="text" id="nama" name="nama" required><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+      <label for="minat">Minat Belajar:</label><br>
+      <input type="text" id="minat" name="minat"><br><br>
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 NihongoClass. Semua hak dilindungi.</p>
+  </footer>
+</body>
+</html>
